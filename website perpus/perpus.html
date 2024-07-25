@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan</title>
+    <link rel="stylesheet" href="perpus.css">
+</head>
+<body>
+    <header>
+        <h1>Perpustakaan Online</h1>
+    </header>
+    <main>
+        <section id="add-book">
+            <h2>Tambah Buku</h2>
+            <form id="book-form">
+                <input type="text" id="title" placeholder="Judul Buku" required>
+                <input type="text" id="author" placeholder="Penulis" required>
+                <input type="text" id="isbn" placeholder="ISBN" required>
+                <button type="submit">Tambah</button>
+            </form>
+        </section>
+        <section id="book-list">
+            <h2>Daftar Buku</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>ISBN</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="books"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="perpus.js"></script>
+
+</body>
+</html>
